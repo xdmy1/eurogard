@@ -1,0 +1,16 @@
+.hero {
+    background-image: url('/assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.ani20 {
+    background-image: url('/assets/20ani.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+button:hover {
+    cursor:pointer;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eurogard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body class="overflow-x-hidden">
+    
+    <!-- Mobile Navigation Bar -->
+    <div class="lg:hidden fixed top-0 left-0 w-full bg-black text-white z-50">
+        <div class="flex justify-between items-center p-4">
+            <a href="#" class="text-2xl font-bold">
+                <img src="./assets/logo.png" alt="logo" class="w-10">
+            </a>
+            <button id="mobile-menu-toggle" class="text-white text-3xl focus:outline-none">
+                <span id="burger-icon">☰</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Sidebar -->
+    <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-80 max-w-full bg-[#2A2A2A] text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-6">
+            <button id="mobile-menu-close" class="text-white text-3xl mb-8 float-right focus:outline-none">✕</button>
+            <div class="clear-both mt-16">
+                <nav class="flex flex-col gap-6">
+                    <a href="despre-noi.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Despre Noi</a>
+                    <a href="servicii.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Servicii</a>
+                    <a href="contact.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Contact</a>
+                </nav>
+                <div class="border-t border-gray-600 pt-6 mt-8">
+                    <p class="text-white mb-2">contact@eurogard.md</p>
+                    <a href="tel:+373690000000" class="text-[#EDDE14] hover:text-yellow-300 transition-colors duration-200">Tel: +373 (69) 000000</a>
+                </div>
+                <div class="flex gap-4 mt-6">
+                    <a href="#" class="text-white text-2xl hover:text-[#EDDE14] transition-colors duration-200">f</a>
+                    <a href="#" class="text-white text-2xl hover:text-[#EDDE14] transition-colors duration-200">ig</a>
+                    <a href="#" class="text-white text-2xl hover:text-[#EDDE14] transition-colors duration-200">in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex  w-full bg-black backdrop-blur text-white flex-col items-center top-0 left-0 fixed z-10">
+        <div class="py-3 px-4 lg:px-20 w-full flex justify-between items-center">
+            <div class="flex items-center gap-10">
+                <a href="#" class="text-2xl font-bold">
+                    <img src="./assets/logo.png" alt="logo" class="w-10">
+                </a>
+                <div class="flex gap-5">
+                    <a href="despre-noi.html" class="hover:text-[#EDDE14] transition-colors duration-200">Despre Noi</a>
+                    <a href="servicii.html" class="hover:text-[#EDDE14] transition-colors duration-200">Servicii</a>
+                    <a href="contact.html" class="hover:text-[#EDDE14] transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-10">
+                <a href="#" class="hover:text-[#EDDE14] transition-colors duration-200">ig</a>
+                <a href="#" class="hover:text-[#EDDE14] transition-colors duration-200">fb</a>
+                <a href="#" class="hover:text-[#EDDE14] transition-colors duration-200">tt</a>
+                <div class="flex flex-col">
+                    <p>contact@eurogard.md</p>
+                    <a href="tel:+373690000000" class="hover:text-[#EDDE14] transition-colors duration-200">Tel: +373 (69) 000000</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Desktop Category Bar -->
+        <div id="desktop-categories" class="hidden lg:flex px-4 py-3 lg:px-20 w-full flex justify-between items-center bg-gray-600 backdrop-blur text-[#EDDE14] font-bold text-xl">
+            <p>PORTI BATANTE</p>
+            <p>PORTI AUTOPORTANTE</p>
+            <p>GARDURI</p>
+            <p>GABIOANE</p>
+            <p>AUTOMATIZARI</p>
+        </div>
+    </nav>
+
+    <!-- Mobile Category Carousel -->
+    <div class="lg:hidden fixed top-18 left-0 w-full bg-gray-600 backdrop-blur py-5 z-40">
+        <div id="mobile-carousel" class="flex gap-8 animate-scroll">
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">PORTI BATANTE</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">PORTI AUTOPORTANTE</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GARDURI</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GABIOANE</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">AUTOMATIZARI</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">PORTI BATANTE</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">PORTI AUTOPORTANTE</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GARDURI</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GABIOANE</p>
+            <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">AUTOMATIZARI</p>
+        </div>
+    </div>
+
+    <main class="pt-16 lg:pt-0">
+        <section class="hero h-[90vh] w-screen flex flex-col gap-10 justify-center items-center">
+            <div class="bg-[#EDDE14] w-15 h-2"></div>
+            <h1 class="text-white font-bold text-3xl lg:text-5xl">EUROGARD.MD</h1>
+            <h2 class="text-white text-lg lg:text-2xl font-light lg:max-w-[900px] text-center px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</h2>
+            <button class="text-black bg-[#EDDE14] font-medium py-3 px-4 hover:bg-yellow-400 transition-colors duration-200">VEZI MUNCA NOASTRA</button>
+        </section>
+
+        <section class="flex flex-col gap-10 lg:gap-15 justify-center items-center py-10 px-4">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
+                <div class="flex gap-2">
+                    <img src="./assets/serviciu1.svg" class="w-[50px] h-[50px]" alt="serviciu1">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-2xl">Serviciu 1</p>
+                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./assets/serviciu2.svg" class="w-[50px] h-[50px]" alt="serviciu2">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-2xl">Serviciu 2</p>
+                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./assets/serviciu3.svg" class="w-[50px] h-[50px]" alt="serviciu3">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-2xl">Serviciu 3</p>
+                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
+                <div class="flex gap-2">
+                    <img src="./assets/serviciu4.svg" class="w-[50px] h-[50px]" alt="serviciu4">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-2xl">Serviciu 4</p>
+                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./assets/serviciu5.svg" class="w-[50px] h-[50px]" alt="serviciu5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-2xl">Serviciu 5</p>
+                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./assets/serviciu6.svg" class="w-[50px] h-[50px]" alt="serviciu6">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-2xl">Serviciu 6</p>
+                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col lg:flex-row w-full items-stretch">
+            <!-- Left Column -->
+            <div class="w-full lg:w-1/2 bg-[#EDDE14] flex flex-col justify-between px-5 lg:px-20 py-10 space-y-6">
+              <!-- Item 1 -->
+              <div class="flex items-start gap-3">
+                <img src="./assets/arrow-white.svg" alt="arrow" class="w-6 flex-shrink-0" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-xl font-bold">Eco Friendly</p>
+                  <p class="text-gray-800">
+                    Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Item 2 -->
+              <div class="flex items-start gap-3">
+                <img src="./assets/arrow-white.svg" alt="arrow" class="w-6 flex-shrink-0" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-xl font-bold">Cele mai noi tehnologii</p>
+                  <p class="text-gray-800">
+                    Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Item 3 -->
+              <div class="flex items-start gap-3">
+                <img src="./assets/arrow-white.svg" alt="arrow" class="w-6 flex-shrink-0" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-xl font-bold">Cea mai înaltă calitate</p>
+                  <p class="text-gray-800">
+                    Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Right Column -->
+            <div class="w-full lg:w-1/2 flex flex-col h-full justify-between bg-gray-100">
+              <!-- Partea de sus: Heading + Paragrafe -->
+              <div class="flex flex-col gap-6 px-5 lg:px-20 py-10">
+                <!-- Heading + Underline Portocaliu -->
+                <div class="flex flex-col gap-6">
+                  <h2 class="font-bold text-2xl lg:text-4xl">
+                    Niciun proiect nu e prea mic sau prea mare
+                  </h2>
+                  <div class="bg-[#EDDE14] w-16 h-1"></div>
+                </div>
+          
+                <!-- Paragrafe (două coloane pe desktop) -->
+                <div class="mt-6 flex flex-col lg:flex-row gap-8">
+                  <p class="text-gray-800 max-w-[400px]">
+                    Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus
+                    dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla
+                    fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.
+                  </p>
+                  <p class="text-gray-800 max-w-[400px]">
+                    Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus
+                    dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla
+                    fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Call-to-Action Bar (lipită de bază) -->
+              <div class="bg-[#2A2A2A] w-full flex flex-col lg:flex-row items-center justify-between py-8 px-6 mt-10">
+                <p class="text-white font-semibold">Obține o consultație gratis</p>
+                <button class="mt-4 lg:mt-0 text-[#EDDE14] border border-[#EDDE14] py-2 px-5 rounded-md hover:bg-[#EDDE14] hover:text-black transition-colors duration-200">
+                  Apelează
+                </button>
+              </div>
+            </div>
+        </section>
+
+        <section class="ani20 h-[70vh] w-screen flex flex-col gap-10 justify-center items-center">
+            <div class="bg-[#EDDE14] w-15 h-2"></div>
+            <h1 class="text-white font-bold text-3xl lg:text-5xl text-center px-4">SUNTEM PE PIATA DE PESTE 20 ANI</h1>
+            <h2 class="text-white text-lg lg:text-2xl font-light lg:max-w-[900px] text-center px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</h2>
+            <button class="text-black bg-[#EDDE14] font-medium py-3 px-4 hover:bg-yellow-400 transition-colors duration-200">DESPRE NOI</button>
+        </section>
+        
+        <section class="flex flex-col gap-10 lg:gap-15 justify-center items-center py-10 bg-gray-100 px-4">
+          <h2 class="text-2xl lg:text-4xl font-medium">Recenziile Clientilor</h2>
+          <div class="bg-[#EDDE14] w-15 h-2"></div>
+          <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
+            <div class="flex flex-col items-center justify-center gap-10 bg-white p-10 rounded-lg shadow-sm">
+              <img src="./assets/stars.svg" class="w-30" alt="stars">
+              <p class="text-gray-600 text-sm lg:text-md max-w-[250px] text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam."</p>
+              <p class="font-bold">John Smith</p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-10 bg-white p-10 rounded-lg shadow-sm">
+              <img src="./assets/stars.svg" class="w-30" alt="stars">
+              <p class="text-gray-600 text-sm lg:text-md max-w-[250px] text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam."</p>
+              <p class="font-bold">John Smith</p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-10 bg-white p-10 rounded-lg shadow-sm">
+              <img src="./assets/stars.svg" class="w-30" alt="stars">
+              <p class="text-gray-600 text-sm lg:text-md max-w-[250px] text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam."</p>
+              <p class="font-bold">John Smith</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="flex flex-col lg:flex-row w-full">
+          <!-- Coloana stângă (fundal portocaliu + formular) -->
+          <div class="w-full lg:w-1/2 bg-[#EDDE14] px-6 lg:px-20 py-12 flex flex-col">
+            <!-- Titlu + linie sub el -->
+            <h2 class="text-3xl font-bold text-[#2A2A2A]">
+              Contactează-ne
+            </h2>
+            <div class="bg-[#2A2A2A] h-1 w-16 mt-2 mb-8"></div>
+        
+            <!-- Formular -->
+            <form class="flex flex-col space-y-6">
+              <!-- Nume & Prenume -->
+              <div class="flex flex-col lg:flex-row gap-4">
+                <input
+                  type="text"
+                  placeholder="Nume"
+                  class="flex-1 bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                />
+                <input
+                  type="text"
+                  placeholder="Prenume"
+                  class="flex-1 bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                />
+              </div>
+        
+              <!-- Mesaj -->
+              <textarea
+                rows="4"
+                placeholder="Mesaj"
+                class="w-full bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white resize-none"
+              ></textarea>
+        
+              <!-- Butonul SEND MESSAGE, aliniat la dreapta -->
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-[#EDDE14] transition-colors duration-200"
+                >
+                  SEND MESSAGE
+                </button>
+              </div>
+            </form>
+          </div>
+        
+          <!-- Coloana dreaptă (panglică neagră cu social + zona albă cu detalii text) -->
+          <div class="w-full lg:w-1/2 flex flex-col">
+            <!-- Panglică neagră sus cu icoane sociale -->
+            <div class="bg-[#2A2A2A] flex justify-center lg:justify-end items-center space-x-6 py-4 px-6">
+              <!-- Facebook -->
+              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">f</a>
+              <!-- Twitter -->
+              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">t</a>
+              <!-- LinkedIn -->
+              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">in</a>
+            </div>
+        
+            <!-- Zona albă jos cu detalii de contact (numai text în <p>) -->
+            <div class="bg-white flex flex-col space-y-4 px-6 lg:px-20 py-12">
+              <p class="text-[#2A2A2A] font-medium">Bubuieci</p>
+              <p class="text-[#2A2A2A] font-medium">+373 69 212 212</p>
+              <p class="text-[#2A2A2A] font-medium">contact@eurogard.md</p>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- Custom CSS for animations -->
+    <style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .animate-scroll {
+            animation: scroll 15s linear infinite;
+            width: max-content;
+        }
+        
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 1023px) {
+            main {
+                padding-top: 112px; /* Account for mobile nav + carousel */
+            }
+        }
+    </style>
+
+    <!-- Load scripts -->
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    
+</body>
+</html>
