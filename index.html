@@ -11,78 +11,80 @@
 </head>
 <body class="overflow-x-hidden">
     
-    <!-- Mobile Navigation Bar -->
-    <div class="lg:hidden fixed top-0 left-0 w-full bg-black text-white z-50">
-        <div class="flex justify-between items-center p-4">
-            <a href="#" class="text-2xl font-bold">
-                <img src="./assets/logo.png" alt="logo" class="w-10">
-            </a>
-            <button id="mobile-menu-toggle" class="text-white text-3xl focus:outline-none">
-                <span id="burger-icon">☰</span>
-            </button>
-        </div>
-    </div>
+     <!-- Mobile Navigation Bar -->
+     <div class="lg:hidden fixed top-0 left-0 w-full bg-black text-white z-50">
+      <div class="flex justify-between items-center p-4">
+          <a href="index.html" class="text-2xl font-bold">
+              <img src="./assets/logo.png" alt="logo" class="w-10">
+          </a>
+          <button id="mobile-menu-toggle" class="text-white text-3xl focus:outline-none">
+              <span id="burger-icon">☰</span>
+          </button>
+      </div>
+  </div>
 
-    <!-- Mobile Menu Sidebar -->
-    <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-80 max-w-full bg-[#2A2A2A] text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
-        <div class="p-6">
-            <button id="mobile-menu-close" class="text-white text-3xl mb-8 float-right focus:outline-none">✕</button>
-            <div class="clear-both mt-16">
-                <nav class="flex flex-col gap-6">
-                    <a href="despre-noi.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Despre Noi</a>
-                    <a href="servicii.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Servicii</a>
-                    <a href="contact.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Contact</a>
-                </nav>
-                <div class="border-t border-gray-600 pt-6 mt-8">
-                    <p class="text-white mb-2">contact@eurogard.md</p>
-                    <a href="tel:+373690000000" class="text-[#EDDE14] hover:text-yellow-300 transition-colors duration-200">Tel: +373 (69) 000000</a>
-                </div>
-                <div class="flex gap-4 mt-6">
-                    <a href="#" class="text-white text-2xl hover:text-[#EDDE14] transition-colors duration-200">f</a>
-                    <a href="#" class="text-white text-2xl hover:text-[#EDDE14] transition-colors duration-200">ig</a>
-                    <a href="#" class="text-white text-2xl hover:text-[#EDDE14] transition-colors duration-200">in</a>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Mobile Menu Sidebar -->
+  <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-80 max-w-full bg-[#2A2A2A] text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+      <div class="p-6">
+          <button id="mobile-menu-close" class="text-white text-3xl mb-8 float-right focus:outline-none">✕</button>
+          <div class="clear-both mt-16">
+              <nav class="flex flex-col gap-6">
+                  <a href="index.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Acasă</a>
+                  <a href="despre-noi.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Despre Noi</a>
+                  <a href="servicii.html" class="text-[#EDDE14] text-xl font-bold">Servicii</a>
+                  <a href="contact.html" class="text-white text-xl hover:text-[#EDDE14] transition-colors duration-200">Contact</a>
+              </nav>
+              <div class="border-t border-gray-600 pt-6 mt-8">
+                  <a href="tel:+37379705835" class=" font-medium">+373 (79) 705835 </a>
+                  <a href="mailto:eurogardmoldova@gmail.com " class=" font-medium">eurogardmoldova@gmail.com </a>
+              </div>
+              <div class="flex gap-4 mt-6">
+                  <a target="_blank" href="https://instagram.com/eurogard.md/" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/ig.svg" alt="ig"></a>
+                  <a target="_blank" href="https://www.tiktok.com/@eurogardmd" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/tt.svg" alt="tt"></a>
+                  <a target="_blank" href="https://www.facebook.com/eurogard.md" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/fb.svg" alt="fb"></a>
+              </div>
+          </div>
+      </div>
+  </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
 
-    <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex  w-full bg-black backdrop-blur text-white flex-col items-center top-0 left-0 fixed z-10">
-        <div class="py-3 px-4 lg:px-20 w-full flex justify-between items-center">
-            <div class="flex items-center gap-10">
-                <a href="#" class="text-2xl font-bold">
-                    <img src="./assets/logo.png" alt="logo" class="w-10">
-                </a>
-                <div class="flex gap-5">
-                    <a href="despre-noi.html" class="hover:text-[#EDDE14] transition-colors duration-200">Despre Noi</a>
-                    <a href="servicii.html" class="hover:text-[#EDDE14] transition-colors duration-200">Servicii</a>
-                    <a href="contact.html" class="hover:text-[#EDDE14] transition-colors duration-200">Contact</a>
-                </div>
-            </div>
-            <div class="flex items-center gap-10">
-                <a href="#" class="hover:text-[#EDDE14] transition-colors duration-200">ig</a>
-                <a href="#" class="hover:text-[#EDDE14] transition-colors duration-200">fb</a>
-                <a href="#" class="hover:text-[#EDDE14] transition-colors duration-200">tt</a>
-                <div class="flex flex-col">
-                    <p>contact@eurogard.md</p>
-                    <a href="tel:+373690000000" class="hover:text-[#EDDE14] transition-colors duration-200">Tel: +373 (69) 000000</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Desktop Category Bar -->
-        <a class="w-full" href="servicii.html"><div id="desktop-categories" class="hidden lg:flex px-4 py-3 lg:px-20 w-full flex justify-between items-center bg-gray-600 backdrop-blur text-[#EDDE14] font-bold text-xl">
-          <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">PORTI</p>
-          <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GARDURI</p>
-          <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GABIOANE</p>
-          <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">AUTOMATIZARI</p>
-          <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">COPERTINE AUTO</p>
-          <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">CONSTRUCTII METALICE</p>
-        </div></a>
-    </nav>
+  <!-- Desktop Navigation -->
+  <nav class="hidden lg:flex w-full bg-black backdrop-blur text-white flex-col items-center top-0 left-0 fixed z-10">
+      <div class="py-3 px-4 lg:px-20 w-full flex justify-between items-center">
+          <div class="flex items-center gap-10">
+              <a href="index.html" class="text-2xl font-bold">
+                  <img src="./assets/logo.png" alt="logo" class="w-10">
+              </a>
+              <div class="flex gap-5">
+                  <a href="index.html" class="text-[#EDDE14] font-bold">Acasă</a>
+                  <a href="despre-noi.html" class="hover:text-[#EDDE14] transition-colors duration-200">Despre Noi</a>
+                  <a href="servicii.html" class="hover:text-[#EDDE14] transition-colors duration-200">Servicii</a>
+                  <a href="contact.html" class="hover:text-[#EDDE14] transition-colors duration-200">Contact</a>
+              </div>
+          </div>
+          <div class="flex items-center gap-10">
+              <a target="_blank" href="https://instagram.com/eurogard.md/" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/ig.svg" alt="ig"></a>
+              <a target="_blank" href="https://www.tiktok.com/@eurogardmd" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/tt.svg" alt="tt"></a>
+              <a target="_blank" href="https://www.facebook.com/eurogard.md" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/fb.svg" alt="fb"></a>
+              <div class="flex flex-col">
+                  <a href="tel:+37379705835" class=" font-medium">+373 (79) 705835 </a>
+            <a href="mailto:eurogardmoldova@gmail.com " class=" font-medium">eurogardmoldova@gmail.com </a>
+              </div>
+          </div>
+      </div>
+      
+     <!-- Desktop Category Bar -->
+     <a class="w-full" href="servicii.html"><div id="desktop-categories" class="hidden lg:flex px-4 py-3 lg:px-20 w-full flex justify-between items-center bg-gray-600 backdrop-blur text-[#EDDE14] font-bold text-xl">
+      <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">PORTI</p>
+      <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GARDURI</p>
+      <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">GABIOANE</p>
+      <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">AUTOMATIZARI</p>
+      <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">COPERTINE AUTO</p>
+      <p class="text-[#EDDE14] font-bold text-xl whitespace-nowrap px-4">CONSTRUCTII METALICE</p>
+    </div></a>
+</nav>
 
     <!-- Mobile Category Carousel -->
     <div class="lg:hidden fixed top-18 left-0 w-full bg-gray-600 backdrop-blur py-5 z-40">
@@ -107,54 +109,62 @@
         <section class="hero h-[90vh] w-screen flex flex-col gap-10 justify-center items-center">
             <div class="bg-[#EDDE14] w-15 h-2"></div>
             <h1 class="text-white font-bold text-3xl lg:text-5xl">EUROGARD.MD</h1>
-            <h2 class="text-white text-lg lg:text-2xl font-light lg:max-w-[900px] text-center px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</h2>
-            <button class="text-black bg-[#EDDE14] font-medium py-3 px-4 hover:bg-yellow-400 transition-colors duration-200">VEZI MUNCA NOASTRA</button>
+            <h2 class="text-white text-lg lg:text-2xl font-light lg:max-w-[900px] text-center px-4">Unde siguranța prinde formă și calitatea face diferența.</h2>
+            <a href="./servicii.html"><button class="text-black bg-[#EDDE14] font-medium py-3 px-4 hover:bg-yellow-400 transition-colors duration-200">VEZI MUNCA NOASTRA</button></a>
         </section>
 
         <section class="flex flex-col gap-10 lg:gap-15 justify-center items-center py-10 px-4">
-            <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-20">
                 <div class="flex gap-2">
                     <img src="./assets/serviciu1.svg" class="w-[50px] h-[50px]" alt="serviciu1">
                     <div class="flex flex-col gap-1">
-                        <p class="text-2xl">Serviciu 1</p>
-                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                        <p class="text-2xl">1</p>
+                        <p class="max-w-[400px] text-gray-600">Consultanță și proiectare </p>
                     </div>
                 </div>
                 <div class="flex gap-2">
                     <img src="./assets/serviciu2.svg" class="w-[50px] h-[50px]" alt="serviciu2">
                     <div class="flex flex-col gap-1">
-                        <p class="text-2xl">Serviciu 2</p>
-                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                        <p class="text-2xl">2</p>
+                        <p class="max-w-[400px] text-gray-600">Instalare și montaj profesional </p>
                     </div>
                 </div>
                 <div class="flex gap-2">
                     <img src="./assets/serviciu3.svg" class="w-[50px] h-[50px]" alt="serviciu3">
                     <div class="flex flex-col gap-1">
-                        <p class="text-2xl">Serviciu 3</p>
-                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                        <p class="text-2xl">3</p>
+                        <p class="max-w-[400px] text-gray-600">Reparații și întreținere </p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-20">
                 <div class="flex gap-2">
                     <img src="./assets/serviciu4.svg" class="w-[50px] h-[50px]" alt="serviciu4">
                     <div class="flex flex-col gap-1">
-                        <p class="text-2xl">Serviciu 4</p>
-                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                        <p class="text-2xl">4</p>
+                        <p class="max-w-[400px] text-gray-600">Executare rapidă a proiectului </p>
                     </div>
                 </div>
                 <div class="flex gap-2">
                     <img src="./assets/serviciu5.svg" class="w-[50px] h-[50px]" alt="serviciu5">
                     <div class="flex flex-col gap-1">
-                        <p class="text-2xl">Serviciu 5</p>
-                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                        <p class="text-2xl">5</p>
+                        <p class="max-w-[400px] text-gray-600">                        <p class="max-w-[400px] text-gray-600">Executare rapidă a proiectului </p>
+                      </p>
                     </div>
                 </div>
                 <div class="flex gap-2">
                     <img src="./assets/serviciu6.svg" class="w-[50px] h-[50px]" alt="serviciu6">
                     <div class="flex flex-col gap-1">
-                        <p class="text-2xl">Serviciu 6</p>
-                        <p class="max-w-[400px] text-gray-600">Lorem ipsum dolor sit amet</p>
+                        <p class="text-2xl">6</p>
+                        <p class="max-w-[400px] text-gray-600">Garanție de 24 de luni</p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./assets/serviciu6.svg" class="w-[50px] h-[50px]" alt="serviciu6">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-2xl">7</p>
+                        <p class="max-w-[400px] text-gray-600">Posibilitate de achiziționare în rate </p>
                     </div>
                 </div>
             </div>
@@ -169,7 +179,7 @@
                 <div class="flex flex-col gap-1">
                   <p class="text-xl font-bold">Eco Friendly</p>
                   <p class="text-gray-800">
-                    Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                    Ne dedicăm folosirii materialelor eco-friendly, care nu doar asigură durabilitate și rezistență, ci și contribuie la protejarea mediului înconjurător pentru generațiile viitoare. 
                   </p>
                 </div>
               </div>
@@ -180,7 +190,7 @@
                 <div class="flex flex-col gap-1">
                   <p class="text-xl font-bold">Cele mai noi tehnologii</p>
                   <p class="text-gray-800">
-                    Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                    Ne bazăm pe cele mai noi tehnologii de fabricație și prelucrare, garantând astfel produse cu finisaje impecabile, rezistență sporită și o calitate superioară care să satisfacă cele mai exigente cerințe. 
                   </p>
                 </div>
               </div>
@@ -191,7 +201,7 @@
                 <div class="flex flex-col gap-1">
                   <p class="text-xl font-bold">Cea mai înaltă calitate</p>
                   <p class="text-gray-800">
-                    Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                    Ne angajăm să oferim produse de cea mai înaltă calitate, realizate cu atenție la fiecare detaliu, pentru a asigura durabilitate, siguranță și un aspect impecabil pe termen lung. 
                   </p>
                 </div>
               </div>
@@ -212,14 +222,10 @@
                 <!-- Paragrafe (două coloane pe desktop) -->
                 <div class="mt-6 flex flex-col lg:flex-row gap-8">
                   <p class="text-gray-800 max-w-[400px]">
-                    Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus
-                    dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla
-                    fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.
+                    Indiferent dacă ai nevoie de un gard simplu pentru locuința ta sau de porți complexe pentru un spațiu comercial, ne dedicăm în totalitate pentru a oferi soluții personalizate, care să îmbine siguranța cu un design atractiv.
                   </p>
                   <p class="text-gray-800 max-w-[400px]">
-                    Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus
-                    dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla
-                    fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.
+                    Folosim materiale de calitate și tehnologii moderne, asigurând durabilitate și rezistență în timp. Punem mare preț pe atenția la detalii și pe colaborarea strânsă cu fiecare client, pentru a transforma ideile în produse funcționale și estetice. 
                   </p>
                 </div>
               </div>
@@ -227,54 +233,30 @@
               <!-- Call-to-Action Bar (lipită de bază) -->
               <div class="bg-[#2A2A2A] w-full flex flex-col lg:flex-row items-center justify-between py-8 px-6 mt-10">
                 <p class="text-white font-semibold">Obține o consultație gratis</p>
-                <button class="mt-4 lg:mt-0 text-[#EDDE14] border border-[#EDDE14] py-2 px-5 rounded-md hover:bg-[#EDDE14] hover:text-black transition-colors duration-200">
+                <a href="tel:+37379705835"><button class="mt-4 lg:mt-0 text-[#EDDE14] border border-[#EDDE14] py-2 px-5 rounded-md hover:bg-[#EDDE14] hover:text-black transition-colors duration-200">
                   Apelează
-                </button>
+                </button></a>
               </div>
             </div>
         </section>
 
         <section class="ani20 h-[70vh] w-screen flex flex-col gap-10 justify-center items-center">
             <div class="bg-[#EDDE14] w-15 h-2"></div>
-            <h1 class="text-white font-bold text-3xl lg:text-5xl text-center px-4">SUNTEM PE PIATA DE PESTE 20 ANI</h1>
-            <h2 class="text-white text-lg lg:text-2xl font-light lg:max-w-[900px] text-center px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</h2>
-            <button class="text-black bg-[#EDDE14] font-medium py-3 px-4 hover:bg-yellow-400 transition-colors duration-200">DESPRE NOI</button>
-        </section>
+            <h1 class="text-white font-bold text-3xl lg:text-5xl text-center px-4">Experienta de peste 10 ani </h1>
+            <h2 class="text-white text-lg lg:text-2xl font-light lg:max-w-[900px] text-center px-4">Cu o experiență de peste 10 ani în domeniu, ne dedicăm să oferim clienților noștri soluții de calitate superioară, adaptate nevoilor fiecărui proiect, indiferent de complexitate. </h2>
+            <a href="./despre-noi.html"><button class="text-black bg-[#EDDE14] font-medium py-3 px-4 hover:bg-yellow-400 transition-colors duration-200">DESPRE NOI</button>
+        </section></a>
         
-        <section class="flex flex-col gap-10 lg:gap-15 justify-center items-center py-10 bg-gray-100 px-4">
-          <h2 class="text-2xl lg:text-4xl font-medium">Recenziile Clientilor</h2>
-          <div class="bg-[#EDDE14] w-15 h-2"></div>
-          <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
-            <div class="flex flex-col items-center justify-center gap-10 bg-white p-10 rounded-lg shadow-sm">
-              <img src="./assets/stars.svg" class="w-30" alt="stars">
-              <p class="text-gray-600 text-sm lg:text-md max-w-[250px] text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam."</p>
-              <p class="font-bold">John Smith</p>
-            </div>
-            <div class="flex flex-col items-center justify-center gap-10 bg-white p-10 rounded-lg shadow-sm">
-              <img src="./assets/stars.svg" class="w-30" alt="stars">
-              <p class="text-gray-600 text-sm lg:text-md max-w-[250px] text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam."</p>
-              <p class="font-bold">John Smith</p>
-            </div>
-            <div class="flex flex-col items-center justify-center gap-10 bg-white p-10 rounded-lg shadow-sm">
-              <img src="./assets/stars.svg" class="w-30" alt="stars">
-              <p class="text-gray-600 text-sm lg:text-md max-w-[250px] text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam."</p>
-              <p class="font-bold">John Smith</p>
-            </div>
-          </div>
-        </section>
+       
 
         <section class="flex flex-col lg:flex-row w-full">
-          <!-- Coloana stângă (fundal portocaliu + formular) -->
           <div class="w-full lg:w-1/2 bg-[#EDDE14] px-6 lg:px-20 py-12 flex flex-col">
-            <!-- Titlu + linie sub el -->
             <h2 class="text-3xl font-bold text-[#2A2A2A]">
               Contactează-ne
             </h2>
             <div class="bg-[#2A2A2A] h-1 w-16 mt-2 mb-8"></div>
         
-            <!-- Formular -->
             <form class="flex flex-col space-y-6">
-              <!-- Nume & Prenume -->
               <div class="flex flex-col lg:flex-row gap-4">
                 <input
                   type="text"
@@ -288,42 +270,36 @@
                 />
               </div>
         
-              <!-- Mesaj -->
               <textarea
                 rows="4"
-                placeholder="Mesaj"
+                placeholder="Descrie proiectul tău..."
                 class="w-full bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white resize-none"
               ></textarea>
         
-              <!-- Butonul SEND MESSAGE, aliniat la dreapta -->
               <div class="flex justify-end">
                 <button
                   type="submit"
-                  class="border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-[#EDDE14] transition-colors duration-200"
+                  class="border hover:cursor-pointer border-white text-white px-6 py-3 rounded hover:bg-white hover:text-[#EDDE14] transition-colors duration-200"
                 >
-                  SEND MESSAGE
+                  Trimite email
                 </button>
               </div>
             </form>
           </div>
         
-          <!-- Coloana dreaptă (panglică neagră cu social + zona albă cu detalii text) -->
           <div class="w-full lg:w-1/2 flex flex-col">
-            <!-- Panglică neagră sus cu icoane sociale -->
             <div class="bg-[#2A2A2A] flex justify-center lg:justify-end items-center space-x-6 py-4 px-6">
-              <!-- Facebook -->
-              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">f</a>
-              <!-- Twitter -->
-              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">t</a>
-              <!-- LinkedIn -->
-              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">in</a>
+              <a target="_blank" href="https://instagram.com/eurogard.md/" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/ig.svg" alt="ig"></a>
+              <a target="_blank" href="https://www.tiktok.com/@eurogardmd" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/tt.svg" alt="tt"></a>
+              <a target="_blank" href="https://www.facebook.com/eurogard.md" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/fb.svg" alt="fb"></a>
+              
             </div>
         
-            <!-- Zona albă jos cu detalii de contact (numai text în <p>) -->
             <div class="bg-white flex flex-col space-y-4 px-6 lg:px-20 py-12">
-              <p class="text-[#2A2A2A] font-medium">Bubuieci</p>
-              <p class="text-[#2A2A2A] font-medium">+373 69 212 212</p>
-              <p class="text-[#2A2A2A] font-medium">contact@eurogard.md</p>
+              <p class="text-[#2A2A2A] font-medium">Str. Gospodarilor 7, Bubuieci, Chișinău, Moldova </p>
+              <a href="tel:+37379705835" class="text-[#2A2A2A] font-medium">+373 (79) 705835 </a>
+              <a href="mailto:eurogardmoldova@gmail.com " class="text-[#2A2A2A] font-medium">eurogardmoldova@gmail.com </a>
+              
             </div>
           </div>
         </section>
