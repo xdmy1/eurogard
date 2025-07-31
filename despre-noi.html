@@ -151,7 +151,7 @@
                     <div class="flex flex-col gap-2">
                         <h3 class="text-xl font-bold text-[#2A2A2A]">Calitate Superioară</h3>
                         <p class="text-gray-800 leading-relaxed">
-                            Experiență în domeniu, cu o echipă de specialiști cu înaltă calificare.                         </p>
+                            Folosim doar materiale de cea mai înaltă calitate și tehnologii moderne pentru durabilitate maximă.                        </p>
                         </p>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
                         <img src="./assets/serviciu1.svg" class="w-12 h-12 flex-shrink-0" alt="garantie">
                         <div>
                             <h3 class="text-xl font-bold text-[#2A2A2A] mb-2">Garanție Extinsă</h3>
-                            <p class="text-gray-600">Oferim garanție până la 5 ani pentru toate produsele și serviciile noastre</p>
+                            <p class="text-gray-600">Oferim garanție până la 24 luni pentru toate produsele și serviciile noastre</p>
                         </div>
                     </div>
                     
@@ -268,69 +268,59 @@
 
         <!-- Contact Section (Same as index.html) -->
         <section class="flex flex-col lg:flex-row w-full">
-          <!-- Coloana stângă (fundal portocaliu + formular) -->
-          <div class="w-full lg:w-1/2 bg-[#EDDE14] px-6 lg:px-20 py-12 flex flex-col">
-            <!-- Titlu + linie sub el -->
-            <h2 class="text-3xl font-bold text-[#2A2A2A]">
-              Contactează-ne
-            </h2>
-            <div class="bg-[#2A2A2A] h-1 w-16 mt-2 mb-8"></div>
-        
-            <!-- Formular -->
-            <form class="flex flex-col space-y-6">
-              <!-- Nume & Prenume -->
-              <div class="flex flex-col lg:flex-row gap-4">
-                <input
-                  type="text"
-                  placeholder="Nume"
-                  class="flex-1 bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white"
-                />
-                <input
-                  type="text"
-                  placeholder="Prenume"
-                  class="flex-1 bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white"
-                />
-              </div>
-        
-              <!-- Mesaj -->
-              <textarea
-                rows="4"
-                placeholder="Mesaj"
-                class="w-full bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white resize-none"
-              ></textarea>
-        
-              <!-- Butonul SEND MESSAGE, aliniat la dreapta -->
-              <div class="flex justify-end">
-                <button
-                  type="submit"
-                  class="border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-[#EDDE14] transition-colors duration-200"
-                >
-                  SEND MESSAGE
-                </button>
-              </div>
-            </form>
-          </div>
-        
-          <!-- Coloana dreaptă (panglică neagră cu social + zona albă cu detalii text) -->
-          <div class="w-full lg:w-1/2 flex flex-col">
-            <!-- Panglică neagră sus cu icoane sociale -->
-            <div class="bg-[#2A2A2A] flex justify-center lg:justify-end items-center space-x-6 py-4 px-6">
-              <!-- Facebook -->
-              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">f</a>
-              <!-- Twitter -->
-              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">t</a>
-              <!-- LinkedIn -->
-              <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">in</a>
+            <div class="w-full lg:w-1/2 bg-[#EDDE14] px-6 lg:px-20 py-12 flex flex-col">
+              <h2 class="text-3xl font-bold text-[#2A2A2A]">
+                Contactează-ne
+              </h2>
+              <div class="bg-[#2A2A2A] h-1 w-16 mt-2 mb-8"></div>
+          
+              <form class="flex flex-col space-y-6">
+                <div class="flex flex-col lg:flex-row gap-4">
+                  <input
+                    type="text"
+                    placeholder="Nume"
+                    class="flex-1 bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Prenume"
+                    class="flex-1 bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                  />
+                </div>
+          
+                <textarea
+                  rows="4"
+                  placeholder="Descrie proiectul tău..."
+                  class="w-full bg-white text-[#2A2A2A] placeholder-gray-500 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white resize-none"
+                ></textarea>
+          
+                <div class="flex justify-end">
+                  <button
+                    type="submit"
+                    class="border hover:cursor-pointer border-white text-white px-6 py-3 rounded hover:bg-white hover:text-[#EDDE14] transition-colors duration-200"
+                  >
+                    Trimite email
+                  </button>
+                </div>
+              </form>
             </div>
-        
-            <!-- Zona albă jos cu detalii de contact (numai text în <p>) -->
-            <div class="bg-white flex flex-col space-y-4 px-6 lg:px-20 py-12">
-              <p class="text-[#2A2A2A] font-medium">Bubuieci</p>
-              <p class="text-[#2A2A2A] font-medium">+373 69 212 212</p>
-              <p class="text-[#2A2A2A] font-medium">contact@eurogard.md</p>
+          
+            <div class="w-full lg:w-1/2 flex flex-col">
+              <div class="bg-[#2A2A2A] flex justify-center lg:justify-end items-center space-x-6 py-4 px-6">
+                <a target="_blank" href="https://instagram.com/eurogard.md/" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/ig.svg" alt="ig"></a>
+                <a target="_blank" href="https://www.tiktok.com/@eurogardmd" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/tt.svg" alt="tt"></a>
+                <a target="_blank" href="https://www.facebook.com/eurogard.md" class="text-white hover:text-gray-300 transition-colors duration-200"><img class="w-5" src="./assets/fb.svg" alt="fb"></a>
+                
+              </div>
+          
+              <div class="bg-white flex flex-col space-y-4 px-6 lg:px-20 py-12">
+                <p class="text-[#2A2A2A] font-medium">Str. Gospodarilor 7, Bubuieci, Chișinău, Moldova </p>
+                <a href="tel:+37379705835" class="text-[#2A2A2A] font-medium">+373 (79) 705835 </a>
+                <a href="mailto:eurogardmoldova@gmail.com " class="text-[#2A2A2A] font-medium">eurogardmoldova@gmail.com </a>
+                
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
     </main>
 
     <!-- Custom CSS for animations (same as index.html) -->
